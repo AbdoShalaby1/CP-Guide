@@ -15,6 +15,7 @@ vector<double> quadratic(double a, double b, double c) {
     d = sqrt(d);
     return {(-b - d)/(2*a), (-b + d)/(2*a)};
 }
+```
 
 ## 🔢 Bitwise-Number Theory Hybrid
 ### Addition ↔ XOR Relationship
@@ -23,7 +24,7 @@ int sum_using_xor(int a, int b) {
     return (a ^ b) + 2*(a & b);  // a + b = (a ^ b) + 2*(a & b)
 }
 ```
-### Subtraction Equivalent
+### Subtraction ↔ XOR Relationship
 ```cpp
 int sub_using_xor(int a, int b) {
     return (a ^ b) - 2*(~a & b);  // a - b = (a ^ b) - 2*(~a & b)
